@@ -10,6 +10,10 @@ public class Main {
 
     public static int mxdiflg(String[] a1, String[] a2) {
 
+        if( a1.length == 0 ||  a2.length == 0){
+            return -1;
+        }
+
         int a1max =a1[0].length();
         int a1min =a1[0].length();
 
@@ -43,7 +47,7 @@ public class Main {
 
         Collections.sort(results);
 
-        results.stream().forEach( n-> System.out.println(n) );
+//        results.stream().forEach( n-> System.out.println(n) );
 
         return results.get(3);
 
