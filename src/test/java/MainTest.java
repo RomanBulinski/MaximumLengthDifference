@@ -11,6 +11,7 @@ public class MainTest {
         assertEquals(13, Main.mxdiflg(s1, s2)); // 13
     }
 
+
     @Test
     public void testEmptyinput() {
         String[] s1 = new String[]{"hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz"};
@@ -18,6 +19,13 @@ public class MainTest {
         assertEquals(-1, Main.mxdiflg(s1, s2));
     }
 
+
+    @Test
+    public void testEmptyArrays() {
+        String[] s1 = new String[]{};
+        String[] s2 = new String[]{};
+        assertEquals(-1, Main.mxdiflg(s1, s2));
+    }
 
 
 }
